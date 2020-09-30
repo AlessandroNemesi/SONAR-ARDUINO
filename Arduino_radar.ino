@@ -1,11 +1,11 @@
 // Includes the Servo library
 #include <Servo.h>
-// Defines Tirg and Echo pins of the Ultrasonic Sensor
+// Defines Trig and Echo pins of the Ultrasonic Sensor
 const int trigPin = 10;
 const int echoPin = 11;
 // Variables for the duration and the distance
-long duration;
-int distance;
+unsigned long duration;
+long distance;
 Servo myServo; // Creates a servo object for controlling the servo motor
 void setup() {
   pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
